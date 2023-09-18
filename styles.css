@@ -30,6 +30,7 @@ header {
   align-items: start;
   height: 373px;
   z-index: 0;
+  gap: 5px;
 }
 
 .header-background {
@@ -40,19 +41,49 @@ header {
   width: 100%;
 }
 
+.header-vertical-dashed-line {
+  background: repeating-linear-gradient(
+    to bottom,
+    white,
+    white 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  z-index: 2;
+  left: 15px;
+}
+
+.header-horizontal-dashed-line {
+  background: repeating-linear-gradient(
+    to right,
+    white,
+    white 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  position: absolute;
+  height: 3px;
+  width: 52%;
+  z-index: 2;
+  top: 95px;
+}
+
 h1.header-name {
   position: relative;
   z-index: 3;
   font-family: "Arimo", sans-serif;
   align-self: end;
   font-size: 1.8rem;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .header-tagline {
   position: relative;
   z-index: 3;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-right: 60%;
   font-size: 0.8rem;
 }
@@ -66,13 +97,13 @@ h1.header-name {
   position: relative;
   z-index: 1;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .header-about-me-content {
   border: 3px solid white;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .header-float-right {
