@@ -117,13 +117,117 @@ h1.header-name {
   padding: 15px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 325px) {
+  .header-about-me-container {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 350px) {
+  .header-about-me-container {
+    padding-top: 70px;
+  }
+  .header-float-right {
+    height: 40px;
+    width: 161px;
+  }
+}
+
+@media (min-width: 375px) {
+  .header-about-me-container {
+    padding-top: 80px;
+  }
+  .header-float-right {
+    width: 170px;
+  }
+}
+
+@media (min-width: 400px) {
+  .header-about-me-container {
+    padding-top: 90px;
+  }
+  .header-float-right {
+    width: 195px;
+  }
+}
+
+@media (min-width: 425px) {
+  .header-about-me-container {
+    padding-top: 110px;
+  }
+  .header-float-right {
+    width: 220px;
+  }
+}
+
+@media (min-width: 450px) {
+  .header-about-me-container {
+    padding-top: 140px;
+  }
+  .header-float-right {
+    width: 250px;
+  }
+}
+
+@media (min-width: 475px) {
+  .header-about-me-container {
+    padding-top: 160px;
+  }
+}
+
+@media (min-width: 500px) {
+  header {
+    height: 300px;
+  }
   .header-background {
     background-image: url(assets/portfolio-header-ipad.png);
   }
 
+  .header-about-me-container {
+    padding-top: 40px;
+  }
+
   .header-horizontal-dashed-line {
     width: 73%;
+  }
+
+  .header-float-right {
+    width: 130px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 525px) {
+  header {
+    height: 300px;
+  }
+
+  .header-about-me-container {
+    padding-top: 50px;
+  }
+
+  .header-float-right {
+    width: 150px;
+  }
+}
+
+@media (min-width: 555px) {
+  .header-about-me-container {
+    padding-top: 60px;
+  }
+
+  .header-float-right {
+    width: 155px;
+  }
+}
+
+@media (min-width: 575px) {
+  .header-about-me-container {
+    padding-top: 70px;
+  }
+
+  .header-float-right {
+    width: 170px;
   }
 }
 
