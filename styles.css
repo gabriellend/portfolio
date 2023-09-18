@@ -1,0 +1,110 @@
+* {
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 0.07rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  flex: 1;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  align-items: start;
+  height: 373px;
+  z-index: 0;
+}
+
+.header-background {
+  position: absolute;
+  background: url(assets/portfolio-header-phone.png) no-repeat 0% 0% / contain;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+h1.header-name {
+  position: relative;
+  z-index: 3;
+  font-family: "Arimo", sans-serif;
+  align-self: end;
+  font-size: 1.8rem;
+  margin-left: 20px;
+}
+
+.header-tagline {
+  position: relative;
+  z-index: 3;
+  margin-left: 20px;
+  margin-right: 60%;
+  font-size: 0.8rem;
+}
+
+.header-about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fddfbe;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+.header-about-me-content {
+  border: 3px solid white;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-float-right {
+  float: right;
+  width: 125px;
+  height: 30px;
+}
+
+.header-about-me {
+  padding: 10px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url(assets/portfolio-background.png) no-repeat 50% 50% / cover;
+    background-size: 200%;
+  }
+
+  main {
+    max-width: 1425px;
+    max-height: 785px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    background-image: url(assets/portfolio-header-web.png);
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    background-image: url(assets/portfolio-header-ipad.png);
+  }
+}
