@@ -18,6 +18,7 @@ main {
   display: flex;
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
 header {
@@ -28,7 +29,7 @@ header {
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;
   align-items: start;
-  height: 373px;
+  height: 375px;
   z-index: 0;
   gap: 5px;
 }
@@ -97,7 +98,7 @@ h1.header-name {
   position: relative;
   z-index: 1;
   padding-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .header-about-me-content {
@@ -108,12 +109,32 @@ h1.header-name {
 
 .header-float-right {
   float: right;
-  width: 125px;
+  width: 132px;
   height: 30px;
 }
 
 .header-about-me {
-  padding: 10px;
+  padding: 15px;
+}
+
+@media (min-width: 600px) {
+  .header-background {
+    background-image: url(assets/portfolio-header-ipad.png);
+  }
+
+  .header-horizontal-dashed-line {
+    width: 73%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header-background {
+    background: url(assets/portfolio-header-web.png) no-repeat 100% 0% / contain;
+  }
+
+  .header-horizontal-dashed-line {
+    width: 79%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -125,17 +146,5 @@ h1.header-name {
   main {
     max-width: 1425px;
     max-height: 785px;
-  }
-}
-
-@media (min-width: 1000px) {
-  header {
-    background-image: url(assets/portfolio-header-web.png);
-  }
-}
-
-@media (min-width: 600px) {
-  header {
-    background-image: url(assets/portfolio-header-ipad.png);
   }
 }
