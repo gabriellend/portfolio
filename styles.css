@@ -23,17 +23,12 @@ body {
 }
 
 header {
-  /* flex: 1; */
   background-color: #fddfbe;
   position: relative;
-  /* padding-top: 30px; */
-  /* padding-bottom: 20px; */
   display: grid;
   grid-template-rows: 55.5vw 1fr;
   align-items: start;
-  /* height: 375px; */
   z-index: 0;
-  /* gap: 5px; */
 }
 
 .header-background {
@@ -87,7 +82,7 @@ header {
     transparent 20px
   );
   transform: rotate(130deg);
-  left: 39%;
+  left: 39vw;
   top: -8%;
 }
 
@@ -101,20 +96,14 @@ header {
 }
 
 h1.header-name {
-  /* position: relative;
-  z-index: 3; */
   font-family: "Arimo", sans-serif;
   align-self: end;
   font-size: 8vw;
   margin-left: 8vw;
-  /* padding-bottom: 1vw; */
 }
 
 .header-tagline {
-  /* position: relative;
-  z-index: 3; */
   grid-row: 2/3;
-  /* padding-top: 6px; */
   margin-left: 8vw;
   margin-right: 55vw;
   padding-top: 1vw;
@@ -149,13 +138,51 @@ h1.header-name {
   font-size: 5vw;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
+  header {
+    grid-template-rows: 31.5vw 1fr;
+  }
+
   .header-background {
     background-image: url(assets/portfolio-header-ipad.png);
   }
 
+  .header-vertical-dashed-line {
+    height: 31.5vw;
+  }
+
   .header-horizontal-dashed-line {
-    width: 73%;
+    width: 72vw;
+    top: 16vw;
+  }
+
+  .header-diagonal-dashed-line {
+    left: 63vw;
+    top: -5vw;
+    height: 23vw;
+  }
+
+  .header-info {
+    grid-template-rows: 0.5fr 0.5fr;
+  }
+
+  h1.header-name {
+    font-size: 6vw;
+  }
+
+  .header-tagline {
+    font-size: 2.5vw;
+    margin-right: 20vw;
+  }
+
+  .header-float-right {
+    width: 29vw;
+    height: 8vw;
+  }
+
+  .header-about-me {
+    padding: 15px;
+    font-size: 3.5vw;
   }
 }
 
@@ -175,7 +202,7 @@ h1.header-name {
     background-size: 200%;
   }
 
-  main {
+  .content {
     max-width: 1425px;
     max-height: 785px;
   }
