@@ -54,7 +54,7 @@ header {
   left: 4.75vw;
 }
 
-.header-horizontal-dashed-line {
+.header-horizontal-dashed-line-top {
   background: repeating-linear-gradient(
     to right,
     white,
@@ -64,9 +64,26 @@ header {
   );
   position: absolute;
   height: 3px;
-  width: 52%;
+  width: 52vw;
   z-index: 2;
   top: 30vw;
+}
+
+.header-horizontal-dashed-line-bottom {
+  display: none;
+  background: repeating-linear-gradient(
+    to right,
+    white,
+    white 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  position: absolute;
+  height: 3px;
+  width: 34vw;
+  z-index: 2;
+  top: 41vw;
+  left: 66vw;
 }
 
 .header-diagonal-dashed-line {
@@ -140,7 +157,7 @@ h1.header-name {
 
 @media (min-width: 500px) {
   header {
-    grid-template-rows: 31.5vw 1fr;
+    grid-template-rows: 23vw 1fr;
   }
 
   .header-background {
@@ -148,12 +165,16 @@ h1.header-name {
   }
 
   .header-vertical-dashed-line {
-    height: 31.5vw;
+    height: 23vw;
   }
 
-  .header-horizontal-dashed-line {
+  .header-horizontal-dashed-line-top {
     width: 72vw;
     top: 16vw;
+  }
+
+  .header-horizontal-dashed-line-bottom {
+    display: block;
   }
 
   .header-diagonal-dashed-line {
@@ -163,7 +184,7 @@ h1.header-name {
   }
 
   .header-info {
-    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-rows: 2.35fr 1fr;
   }
 
   h1.header-name {
@@ -176,13 +197,28 @@ h1.header-name {
   }
 
   .header-float-right {
-    width: 29vw;
-    height: 8vw;
+    display: none;
+  }
+
+  .header-about-me-container {
+    z-index: 2;
+    padding-bottom: 20px;
+    width: 67vw;
+  }
+
+  .header-about-me-content {
+    margin-right: 0;
   }
 
   .header-about-me {
     padding: 15px;
-    font-size: 3.5vw;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-horizontal-dashed-line-bottom {
+    display: none;
   }
 }
 
@@ -191,7 +227,7 @@ h1.header-name {
     background: url(assets/portfolio-header-web.png) no-repeat 100% 0% / contain;
   }
 
-  .header-horizontal-dashed-line {
+  .header-horizontal-dashed-line-top {
     width: 79%;
   }
 }
