@@ -24,11 +24,12 @@ body {
 
 header {
   /* flex: 1; */
+  background-color: #fddfbe;
   position: relative;
   /* padding-top: 30px; */
   /* padding-bottom: 20px; */
   display: grid;
-  grid-template-rows: 1fr 0.7fr 2fr;
+  grid-template-rows: 55.5vw 1fr;
   align-items: start;
   /* height: 375px; */
   z-index: 0;
@@ -52,10 +53,10 @@ header {
     transparent 20px
   );
   position: absolute;
-  height: 100%;
+  height: 55vw;
   width: 3px;
   z-index: 2;
-  left: 15px;
+  left: 4.75vw;
 }
 
 .header-horizontal-dashed-line {
@@ -70,7 +71,7 @@ header {
   height: 3px;
   width: 52%;
   z-index: 2;
-  top: 95px;
+  top: 30vw;
 }
 
 .header-diagonal-dashed-line {
@@ -90,35 +91,45 @@ header {
   top: -8%;
 }
 
-h1.header-name {
+.header-info {
   position: relative;
   z-index: 3;
+  display: grid;
+  grid-row: 1/2;
+  grid-template-rows: 1.2fr 1fr;
+  height: 100%;
+}
+
+h1.header-name {
+  /* position: relative;
+  z-index: 3; */
   font-family: "Arimo", sans-serif;
   align-self: end;
   font-size: 8vw;
-  margin-left: 25px;
+  margin-left: 8vw;
+  /* padding-bottom: 1vw; */
 }
 
 .header-tagline {
-  position: relative;
-  z-index: 3;
-  padding-top: 6px;
-  margin-left: 25px;
-  margin-right: 60%;
+  /* position: relative;
+  z-index: 3; */
+  grid-row: 2/3;
+  /* padding-top: 6px; */
+  margin-left: 8vw;
+  margin-right: 55vw;
+  padding-top: 1vw;
   font-size: 4vw;
 }
 
 .header-about-me-container {
+  grid-row: 2/3;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
   background-color: #fddfbe;
   position: relative;
   z-index: 1;
-  /* top: -8vw; */
   padding-bottom: 20px;
-  padding-top: 5vw;
 }
 
 .header-about-me-content {
@@ -129,161 +140,22 @@ h1.header-name {
 
 .header-float-right {
   float: right;
-  width: 155px;
-  height: 40px;
+  width: 55vw;
+  height: 10vw;
 }
 
 .header-about-me {
-  padding: 15px;
+  padding: 10px;
   font-size: 5vw;
 }
 
-@media (min-width: 340px) {
-  header {
-    grid-template-rows: 1fr 0.7fr 2fr;
-  }
-
-  .header-float-right {
-    height: 40px;
-  }
-}
-
-@media (min-width: 355px) {
-  header {
-    grid-template-rows: 1fr 0.9fr 2fr;
-  }
-
-  .header-float-right {
-    height: 40px;
-  }
-}
-
-@media (min-width: 375px) {
-  header {
-    grid-template-rows: 1fr 0.95fr 2fr;
-  }
-
-  .header-float-right {
-    width: 170px;
-    height: 40px;
-  }
-}
-
-@media (min-width: 390px) {
-  header {
-    grid-template-rows: 1fr 1fr 2fr;
-  }
-
-  .header-float-right {
-    width: 180px;
-  }
-}
-
-@media (min-width: 410px) {
-  header {
-    grid-template-rows: 1fr 1.3fr 2fr;
-  }
-
-  .header-float-right {
-    width: 190px;
-  }
-}
-
-/* @media (min-width: 375px) {
-  .header-about-me-container {
-    padding-top: 80px;
-  }
-  .header-float-right {
-    width: 170px;
-  }
-}
-
-@media (min-width: 400px) {
-  .header-about-me-container {
-    padding-top: 90px;
-  }
-  .header-float-right {
-    width: 195px;
-  }
-}
-
-@media (min-width: 425px) {
-  .header-about-me-container {
-    padding-top: 110px;
-  }
-  .header-float-right {
-    width: 220px;
-  }
-}
-
-@media (min-width: 450px) {
-  .header-about-me-container {
-    padding-top: 140px;
-  }
-  .header-float-right {
-    width: 250px;
-  }
-}
-
-@media (min-width: 475px) {
-  .header-about-me-container {
-    padding-top: 160px;
-  }
-}
-
-@media (min-width: 500px) {
-  header {
-    height: 300px;
-  }
+@media (min-width: 600px) {
   .header-background {
     background-image: url(assets/portfolio-header-ipad.png);
   }
 
-  .header-about-me-container {
-    padding-top: 40px;
-  }
-
   .header-horizontal-dashed-line {
     width: 73%;
-  }
-
-  .header-float-right {
-    width: 130px;
-    height: 30px;
-  }
-}
-
-@media (min-width: 525px) {
-  header {
-    height: 300px;
-  }
-
-  .header-about-me-container {
-    padding-top: 50px;
-  }
-
-  .header-float-right {
-    width: 150px;
-  }
-}
-
-@media (min-width: 555px) {
-  .header-about-me-container {
-    padding-top: 60px;
-  }
-
-  .header-float-right {
-    width: 155px;
-  }
-}
-
-@media (min-width: 575px) {
-  .header-about-me-container {
-    padding-top: 70px;
-  }
-
-  .header-float-right {
-    width: 170px;
   }
 }
 
@@ -307,4 +179,4 @@ h1.header-name {
     max-width: 1425px;
     max-height: 785px;
   }
-} */
+}
