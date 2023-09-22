@@ -253,7 +253,7 @@ h1.header-name {
   .header-info {
     background-color: #fddfbe;
     grid-row: 1/3;
-    height: 22.5vw;
+    height: 22.25vw;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -302,7 +302,53 @@ h1.header-name {
   }
 
   .content {
-    max-width: 1425px;
-    max-height: 785px;
+    width: 1440px;
+    height: 785px;
+  }
+
+  header {
+    height: 432px;
+    grid-template-columns: 435px 1fr;
+    grid-template-rows: 160px 160px 1fr;
+  }
+
+  .header-vertical-dashed-line {
+    height: 322px;
+    left: 435px;
+  }
+
+  .header-horizontal-dashed-line-top {
+    width: 1150px;
+    top: 154px;
+  }
+
+  .header-diagonal-dashed-line {
+    top: -40px;
+    left: 1060px;
+    height: 230px;
+  }
+
+  .header-info {
+    width: 432px;
+    height: 322px;
+  }
+
+  h1.header-name {
+    font-size: 2.5rem;
+  }
+
+  .header-tagline {
+    font-size: 1.25rem;
+    margin-left: 100px;
+  }
+
+  .header-about-me-container {
+    width: 633px;
+    height: 136px;
+    margin-left: 20px;
+  }
+
+  .header-about-me {
+    font-size: 1.5rem;
   }
 }
