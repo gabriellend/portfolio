@@ -1,15 +1,15 @@
-const name = document.querySelector(".header-name");
+const headerName = document.querySelector(".header-name");
 
 function checkNameWidth() {
   const br = document.querySelector("br");
 
   if (window.innerWidth >= 500) {
     if (br) {
-      name.innerHTML = name.innerHTML.replace("<br>", " ");
+      headerName.innerHTML = headerName.innerHTML.replace("<br>", " ");
     }
   } else {
     if (!br) {
-      name.innerHTML = name.innerHTML.replace(" ", "<br>");
+      headerName.innerHTML = headerName.innerHTML.replace(" ", "<br>");
     }
   }
 }
