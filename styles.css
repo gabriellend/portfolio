@@ -159,12 +159,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 
 .main-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
   flex: 1;
 }
@@ -306,15 +306,15 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  .header-background {
-    background: url(assets/portfolio-header-web.png) no-repeat 100% 0% / contain;
-  }
-
   header {
     background-color: transparent;
     grid-template-columns: 30vw 1fr;
-    grid-template-rows: 11vw 11vw 1fr;
+    grid-template-rows: 11vw 11vw 8vw;
     height: 30vw;
+  }
+
+  .header-background {
+    background: url(assets/portfolio-header-web.png) no-repeat 100% 0% / contain;
   }
 
   .header-vertical-dashed-line {
@@ -375,6 +375,10 @@ footer {
   .header-about-me {
     font-size: 1.7vw;
     padding: 8px;
+  }
+
+  main {
+    padding-top: 0;
   }
 }
 
