@@ -164,7 +164,7 @@ main {
 
 .main-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
   flex: 1;
 }
@@ -253,7 +253,7 @@ footer {
   }
 
   .header-horizontal-dashed-line-top {
-    width: 72vw;
+    width: 71vw;
     top: 16vw;
   }
 
@@ -262,7 +262,7 @@ footer {
   }
 
   .header-diagonal-dashed-line {
-    left: 63vw;
+    left: 62vw;
     top: -5vw;
     height: 23vw;
   }
@@ -324,13 +324,13 @@ footer {
   }
 
   .header-horizontal-dashed-line-top {
-    width: 80vw;
+    width: 78.5vw;
     top: 11vw;
     z-index: 4;
   }
 
   .header-diagonal-dashed-line {
-    left: 72.5vw;
+    left: 71vw;
     height: 19vw;
   }
 
@@ -397,7 +397,7 @@ footer {
   header {
     height: 432px;
     grid-template-columns: 435px 1fr;
-    grid-template-rows: 160px 160px 1fr;
+    grid-template-rows: 155px 155px 125px;
   }
 
   .header-vertical-dashed-line {
