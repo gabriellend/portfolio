@@ -160,13 +160,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
+  padding-bottom: 100px;
 }
 
 .main-projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
+  gap: 50px;
   flex: 1;
 }
 
@@ -214,12 +215,15 @@ h2.main-project-title {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   background-color: #fddfbe;
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  width: 100%;
 }
 
 .footer-icons {
@@ -440,5 +444,9 @@ footer {
 
   .header-about-me {
     font-size: 1.5rem;
+  }
+
+  footer {
+    width: 1440px;
   }
 }
