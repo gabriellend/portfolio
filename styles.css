@@ -33,7 +33,8 @@ header {
 
 .header-background {
   position: absolute;
-  background: url(assets/portfolio-header-phone.png) no-repeat 0% 0% / contain;
+  background: url(assets/header/portfolio-header-phone.png) no-repeat 0% 0% /
+    contain;
   z-index: 2;
   height: 100%;
   width: 100%;
@@ -245,7 +246,7 @@ footer {
   }
 
   .header-background {
-    background-image: url(assets/portfolio-header-ipad.png);
+    background-image: url(assets/header/portfolio-header-ipad.png);
   }
 
   .header-vertical-dashed-line {
@@ -315,7 +316,8 @@ footer {
   }
 
   .header-background {
-    background: url(assets/portfolio-header-web.png) no-repeat 100% 0% / contain;
+    background: url(assets/header/portfolio-header-web.png) no-repeat 100% 0% /
+      contain;
   }
 
   .header-vertical-dashed-line {
